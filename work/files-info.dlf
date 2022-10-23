@@ -1,0 +1,98 @@
+ddg
+├── abc.py
+├── conversion
+│   ├── blender
+│   │   ├── core.py
+│   │   ├── halfedge.py
+│   │   └── net.py
+│   ├── halfedge
+│   │   ├── core.py
+│   │   ├── geometry
+│   │   │   └── spheres.py
+│   │   └── nets.py
+│   ├── indexedfaceset
+│   │   └── blender.py
+│   └── nets
+│       ├── core.py
+│       └── geometry
+│           ├── quadrics.py
+│           ├── spheres.py
+│           └── subspaces.py
+├── datastructures
+│   ├── halfedge
+│   │   ├── copy.py # Not vectorized (mainly because of hds)			 some docstrings missing		 		no module description
+│   │   ├── delaunay.py # Partially vectorized					 many docstrings contain math env
+│   │   ├── get.py # Partially vectoried?					 some docstrings missing		 		no module description
+│   │   ├── grid.py # Not vectorized						 no docstrings				 		no module description		script might be deprecated because of math.grids.py
+│   │   ├── io.py # Not vectorized (vectorization unlikely)			 docstrings really bad or missing completely 		no module description
+│   │   ├── math.py # Partially vectorized (main problem is the hds structure)	 docstrings slightly incohesive				no module description
+│   │   ├── modify.py # Partially vectorized (hds problem)			 docstrings slighlty incohesive
+│   │   ├── _node.py # Not vectorized						 docstrings not on standard
+│   │   ├── set.py # Not vectorized (hds problem)											no module description
+│   │   ├── surface_generator.py ### Will get reworked!!
+│   │   └── surface.py # Not vectorized (hds problem)				 some docstrings not on standard 			incohesive code
+│   ├── indexedfaceset
+│   │   ├── ifs_generator.py # Partially vectorized (math.geometric_objects is the problem here)					bad module description
+│   │   ├── ifs.py # Partially vectorized (mainly not vectorized)		 some docstrings are missing				bad module description
+│   │   └── utils.py # Partially vectorized (ifs problem)			 docstrings really bad or missing completely		no module description
+│   └── nets
+│       ├── conversion.py 
+│       ├── domain.py
+│       ├── net_generators
+│       │   ├── confocal_quadrics.py
+│       │   ├── jacobi_elliptic_curve.py
+│       │   ├── quadrics.py
+│       │   └── spheres_and_circles.py
+│       ├── net.py # Not vectorized (especially return values)			 many docstrings missing				no module description		many open TODO's
+│       ├── traverser.py
+│       └── utils.py
+├── geometry
+│   ├── conversion.py
+│   ├── _euclidean.py
+│   ├── geometries.py
+│   ├── intersection.py
+│   ├── _laguerre.py
+│   ├── _lie.py
+│   ├── _moebius
+│   │   ├── euclidean.py
+│   │   └── projective.py
+│   ├── quadrics.py
+│   ├── spheres.py
+│   └── subspaces.py
+├── __main__.py
+├── math # Should be clean and vectorized as per issue #518
+│   ├── complex.py
+│   ├── confocal2d.py
+│   ├── euclidean2d.py
+│   ├── euclidean.py
+│   ├── functions.py
+│   ├── _functools.py
+│   ├── geometric_objects.py
+│   ├── grids.py
+│   ├── inner_product.py
+│   ├── linalg.py
+│   ├── nets2d.py
+│   ├── projective.py
+│   ├── quaternion.py
+│   ├── random.py
+│   └── symmetric_matrices.py
+├── optimize
+│   ├── functional.py
+│   ├── functionals
+│   │   ├── dirichlet_energy.py
+│   │   └── planar_faces_energy.py
+│   └── minimize.py
+└── visualization
+    └── blender
+        ├── animation.py
+        ├── bmesh.py
+        ├── camera.py
+        ├── clear.py
+        ├── collection.py
+        ├── curve.py
+        ├── light.py
+        ├── material.py
+        ├── mesh.py
+        ├── object.py
+        └── props.py
+
