@@ -77,11 +77,11 @@ ddg
 │   ├── random.py
 │   └── symmetric_matrices.py
 ├── optimize
-│   ├── functional.py
+│   ├── functional.py # Not vectorized					  some docstrings not on standard			no module description
 │   ├── functionals
 │   │   ├── dirichlet_energy.py
 │   │   └── planar_faces_energy.py
-│   └── minimize.py
+│   └── minimize.py # Not vectorized					  							no module description			ternary operator across two lines
 └── visualization
     └── blender
         ├── animation.py
