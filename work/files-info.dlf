@@ -58,7 +58,7 @@ ddg
 │   │   └── projective.py
 │   ├── quadrics.py
 │   ├── spheres.py
-│   └── subspaces.py
+│   └── subspaces.py # Partially vectorized (input of Subspaces problem)         some docstrings missing                                no module description   
 ├── __main__.py
 ├── math # Should be clean and vectorized as per issue #518
 │   ├── complex.py
